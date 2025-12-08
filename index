@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tavs vietnes nosaukums — Annija</title>
+  <meta name="description" content="Vienkārša, moderna un responsīva mājaslapa — gatava publicēšanai." />
+
+  <!-- Google font (viegls) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top">TavsNosaukums</a>
+      <nav class="nav" id="nav">
+        <a href="#about">Par</a>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#contact">Kontakti</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="nav">
+        <span class="hamburger"></span>
+        <span class="sr-only">Atvērt izvēlni</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Ievads">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Sveika! Es esmu Annija — radīšu skaistas digitālās pieredzes.</h1>
+          <p>Vienkārša, ātra un adaptīva mājaslapa, gatava tavam domēnam. Sāksim!</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Sazināties</a>
+            <a class="btn" href="#about">Uzzināt vairāk</a>
+          </div>
+        </div>
+        <figure class="hero-figure" aria-hidden="true">
+          <!-- labāk nomainīt uz savu attēlu; izmanto placeholder, kamēr nav sava -->
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop&crop=faces" alt="">
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>Par mani</h2>
+        <p>Šī ir īsa sadaļa, kur aprakstīt, kas tu esi, ko dari un kāpēc apmeklētājam vajadzētu izvēlēties tevi. Vari ielikt vairāk punktu vai saites uz sociālajiem tīkliem.</p>
+        <div class="features">
+          <article>
+            <h3>Responsīvs dizains</h3>
+            <p>Skaisti izskatās gan telefonā, gan datorā.</p>
+          </article>
+          <article>
+            <h3>Ātrs ielādes laiks</h3>
+            <p>Optimizēts statisks kods — ātrākai lietotāju pieredzei.</p>
+          </article>
+          <article>
+            <h3>Pielāgojams</h3>
+            <p>Viegls personalizēt saturs, krāsas un attēli pēc tavas gaumes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section alt" id="services">
+      <div class="container">
+        <h2>Pakalpojumi</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Mājaslapu izstrāde</h3>
+            <p>Vienkāršas vai sarežģītas vietnes ar skaidru mērķi.</p>
+          </div>
+          <div class="card">
+            <h3>Dizains un UI</h3>
+            <p>Moderni izkārtojumi un pieejamība.</p>
+          </div>
+          <div class="card">
+            <h3>Uzturēšana</h3>
+            <p>Atjauninājumi, drošība un rezerves kopijas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery" aria-label="Galerija">
+      <div class="container">
+        <h2>Galerija</h2>
+        <div class="gallery-grid" role="list">
+          <!-- Nomaini attēlus uz saviem -->
+          <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=800&auto=format&fit=crop" alt="Paraugs 1">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Paraugs 2">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop" alt="Paraugs 3">
+          <img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?q=80&w=800&auto=format&fit=crop" alt="Paraugs 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact" aria-label="Kontakti">
+      <div class="container">
+        <h2>Sazinies</h2>
+        <p>Nosūti īsu ziņu — šī forma izmanto klienta puses validāciju un mailto fallback (bez servera).</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Vārds
+            <input type="text" name="name" id="name" required minlength="2" placeholder="Tavs vārds">
+          </label>
+
+          <label>
+            Epasts
+            <input type="email" name="email" id="email" required placeholder="tavs@epasts.lv">
+          </label>
+
+          <label>
+            Ziņa
+            <textarea name="message" id="message" rows="6" required minlength="10" placeholder="Raksti šeit..."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Nosūtīt</button>
+            <button type="reset" class="btn">Notīrīt</button>
+          </div>
+
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-meta">
+          <p>Vai sūti e-pastu tieši: <a href="mailto:tevis@epasts.lv">tevis@epasts.lv</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tava vārda projekts. Visas tiesības paturētas.</p>
+      <nav aria-label="Footer nav">
+        <a href="#top">Augšā</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
