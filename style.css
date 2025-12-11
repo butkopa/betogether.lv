@@ -1,0 +1,107 @@
+:root{
+  --max-w: 1100px;
+  --gap: 1.25rem;
+  --brand: #0b74de;
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --radius: 8px;
+  --card-bg: #f8fafc;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  --ff: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--ff);
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:calc(100% - 2rem);
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:var(--gap) 0;
+}
+
+/* Header */
+.site-header{
+  border-bottom:1px solid #e6edf3;
+  background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(4px);
+  z-index:30;
+}
+.site-header .container{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{font-weight:700; color:var(--brand); text-decoration:none}
+.nav{display:flex; gap:1rem}
+.nav a{color:var(--muted); text-decoration:none; padding:.5rem}
+.menu-toggle{display:none}
+
+/* Hero */
+.hero{
+  padding:4rem 0;
+  background:linear-gradient(180deg,#f0f9ff 0%, #ffffff 60%);
+  text-align:center;
+}
+.hero h1{margin:0 0 .5rem; font-size:clamp(1.6rem, 3.2vw, 2.4rem)}
+.btn{
+  display:inline-block;
+  background:var(--brand);
+  color:white;
+  padding:.65rem 1rem;
+  border-radius:6px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  gap:var(--gap);
+  grid-template-columns:repeat(3,1fr);
+  padding:2rem 0;
+}
+.card{
+  background:var(--card-bg);
+  padding:1.2rem;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+/* Form */
+label{display:block; margin-bottom:.75rem; color:var(--muted)}
+input,textarea{
+  width:100%;
+  padding:.6rem;
+  border:1px solid #e6edf3;
+  border-radius:6px;
+  margin-top:.35rem;
+}
+
+/* Footer */
+.site-footer{border-top:1px solid #e6edf3; padding:1rem 0; text-align:center; color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:700px){
+  .nav{display:none}
+  .menu-toggle{display:inline-block}
+  .cards{grid-template-columns:1fr}
+  .container{width:calc(100% - 1rem)}
+}
+  
