@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   background: #fffaf0;
   color: #222;
 }
@@ -11,24 +15,45 @@ header {
   align-items: center;
   padding: 20px 40px;
   background: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ff9f1c;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   color: #222;
 }
 
 .hero {
-  background: #ffd84d;
-  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 40px;
+  background: linear-gradient(#fff3c4, #ffffff);
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+}
+
+.hero-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.section-title {
   text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
 }
 
 .cards {
@@ -38,16 +63,39 @@ nav a {
   padding: 40px;
 }
 
-.case {
+.case-card {
   background: white;
   width: 220px;
   padding: 30px;
+  border-radius: 18px;
   text-align: center;
   cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ffd84d;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.page {
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* POPUP */
 #popup {
   display: none;
   position: fixed;
@@ -57,39 +105,15 @@ nav a {
   align-items: center;
 }
 
-.popup-box {
+.popup-content {
   background: white;
   padding: 30px;
   border-radius: 20px;
-  width: 300px;
+  width: 320px;
   text-align: center;
 }
 
 .close {
   float: right;
   cursor: pointer;
-  font-size: 20px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #ffd84d;
-  border-radius: 25px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.page {
-  padding: 60px;
-  text-align: center;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
