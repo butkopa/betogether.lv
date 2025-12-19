@@ -4,12 +4,12 @@ function openPopup(person) {
 
   if (person === "anna") {
     title.innerText = "Anna, 7";
-    text.innerText = "Anna needs medical treatment support.";
+    text.innerText = "Anna needs medical support.";
   }
 
   if (person === "mark") {
     title.innerText = "Mark, 12";
-    text.innerText = "Mark needs educational and care support.";
+    text.innerText = "Mark needs educational support.";
   }
 
   document.getElementById("popup").style.display = "flex";
