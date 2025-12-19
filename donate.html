@@ -1,13 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BeTogether | Donate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
 <header>
   <div class="logo">
-    <img src="images/logo.png" alt="BeTogether Logo">
+    <img src="images/logo.png">
     <span>BeTogether</span>
   </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="mission.html">Mission</a>
     <a href="par-mums.html">Par mums</a>
-    <a href="donate.html" class="donate-btn">Donate</a>
   </nav>
 </header>
 
+<section class="page">
+  <h1>Donate</h1>
+  <p>Your support changes lives.</p>
+
+  <!-- PAYPAL -->
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+    <input type="hidden" name="currency_code" value="USD">
+    <button class="btn">Donate via PayPal</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 BeTogether</p>
+</footer>
+
+</body>
+</html>
