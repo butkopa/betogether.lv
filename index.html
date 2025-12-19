@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>BeTogether</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">
-    <img src="./images/logo.png" alt="Logo">
-    <span>BeTogether</span>
-  </div>
+  <h2 class="logo">BeTogether</h2>
   <nav>
     <a href="index.html">Home</a>
     <a href="mission.html">Mission</a>
@@ -27,16 +24,17 @@
 
 <section class="cards">
   <div class="case" onclick="openPopup('anna')">
-    <img src="./images/person1.jpg">
     <h3>Anna, 7</h3>
+    <p>Medical support</p>
   </div>
 
   <div class="case" onclick="openPopup('mark')">
-    <img src="./images/person2.jpg">
     <h3>Mark, 12</h3>
+    <p>Education support</p>
   </div>
 </section>
 
+<!-- POPUP -->
 <div id="popup">
   <div class="popup-box">
     <span class="close" onclick="closePopup()">×</span>
@@ -46,8 +44,10 @@
   </div>
 </div>
 
-<footer>© 2025 BeTogether</footer>
+<footer>
+  © 2025 BeTogether
+</footer>
 
-<script src="./js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
