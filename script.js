@@ -1,20 +1,21 @@
-function openPopup(person) {
-  const title = document.getElementById("popupTitle");
-  const text = document.getElementById("popupText");
+const popup = document.getElementById("popup");
+const popupTitle = document.getElementById("popupTitle");
+const popupText = document.getElementById("popupText");
 
+function openPopup(person) {
   if (person === "anna") {
-    title.innerText = "Anna, 7";
-    text.innerText = "Anna needs medical support.";
+    popupTitle.innerText = "Anna, 7";
+    popupText.innerText = "Anna needs urgent medical support.";
   }
 
   if (person === "mark") {
-    title.innerText = "Mark, 12";
-    text.innerText = "Mark needs educational support.";
+    popupTitle.innerText = "Mark, 12";
+    popupText.innerText = "Mark needs educational support.";
   }
 
-  document.getElementById("popup").style.display = "flex";
+  popup.style.display = "flex";
 }
 
 function closePopup() {
-  document.getElementById("popup").style.display = "none";
+  popup.style.display = "none";
 }
