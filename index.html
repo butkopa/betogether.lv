@@ -1,89 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeTogether – Charity</title>
 
-  <!-- SEO + Social (edit) -->
-  <meta name="description" content="A simple starter website." />
-  <meta property="og:title" content="My Website" />
-  <meta property="og:description" content="A simple starter website." />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Fallback for older browsers -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">MyWebsite</a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">☰</button>
-    </div>
+
+  <header>
+    <h1>BeTogether</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#donate">Donate</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>BE TOGETHER</h1>
-        <p>Use this as a base for your project. Mobile-first, accessible and minimal.</p>
-        <a class="btn" href="#about">Get started</a>
-      </div>
-    </section>
-
-    <section id="about" class="container content">
-      <h2>Par mums</h2>
-      <p>Short paragraph describing the project.</p>
-    </section>
-
-    <section id="features" class="container cards">
-      <article class="card">
-        <h3>Responsive</h3>
-        <p>Works on phones, tablets and desktops.</p>
-      </article>
-      <article class="card">
-        <h3>Accessible</h3>
-        <p>Keyboard / screen reader friendly basics included.</p>
-      </article>
-      <article class="card">
-        <h3>Easy to extend</h3>
-        <p>Modify CSS variables and grid to fit your design.</p>
-      </article>
-    </section>
-
-    <section id="contact" class="container content">
-      <h2>Kontaktējies ar mums</h2>
-      <form id="contact-form" novalidate>
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4"></textarea>
-        </label>
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> MyWebsite</small>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Together, we can help</h2>
+      <p>
+        BeTogether is a charity focused on kindness, unity, and making a real
+        difference in people’s lives.
+      </p>
+      <a href="#donate" class="btn">Get Involved</a>
     </div>
+
+    <div class="hero-card">
+      <h3>Why BeTogether?</h3>
+      <p>
+        Because real change happens when people stand together and care for one another.
+      </p>
+    </div>
+  </section>
+
+  <section id="mission">
+    <h2 class="section-title">Our Mission</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Support</h3>
+        <p>Helping communities through donations and volunteering.</p>
+      </div>
+
+      <div class="card">
+        <h3>Care</h3>
+        <p>Providing help and resources where they are needed most.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hope</h3>
+        <p>Creating a brighter future for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h2 class="section-title">Make an Impact</h2>
+    <p class="donate-text">Every contribution matters.</p>
+    <button id="donateBtn" class="btn">Donate Now</button>
+  </section>
+
+  <footer>
+    <p>© 2025 BeTogether. All rights reserved.</p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
