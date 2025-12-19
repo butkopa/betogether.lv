@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BeTogether | Home</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+  <title>BeTogether</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <header>
   <div class="logo">
-    <img src="images/logo.png">
+    <img src="./images/logo.png" alt="Logo">
     <span>BeTogether</span>
   </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="mission.html">Mission</a>
     <a href="par-mums.html">Par mums</a>
-    <a href="donate.html" class="donate-btn">Donate</a>
+    <a href="donate.html">Donate</a>
   </nav>
 </header>
 
@@ -26,24 +25,20 @@
   <p>Helping people through kindness and action.</p>
 </section>
 
-<section class="cases">
-  <h2>People We Help</h2>
-  <div class="cards">
-    <div class="case-card" onclick="openPopup('anna')">
-      <img src="images/person1.jpg">
-      <h3>Anna, 7</h3>
-    </div>
+<section class="cards">
+  <div class="case" onclick="openPopup('anna')">
+    <img src="./images/person1.jpg">
+    <h3>Anna, 7</h3>
+  </div>
 
-    <div class="case-card" onclick="openPopup('mark')">
-      <img src="images/person2.jpg">
-      <h3>Mark, 12</h3>
-    </div>
+  <div class="case" onclick="openPopup('mark')">
+    <img src="./images/person2.jpg">
+    <h3>Mark, 12</h3>
   </div>
 </section>
 
-<!-- POPUP -->
-<div id="popup" class="popup">
-  <div class="popup-content">
+<div id="popup">
+  <div class="popup-box">
     <span class="close" onclick="closePopup()">×</span>
     <h2 id="popupTitle"></h2>
     <p id="popupText"></p>
@@ -51,9 +46,8 @@
   </div>
 </div>
 
-<footer>
-  <p>© 2025 BeTogether</p>
-</footer>
+<footer>© 2025 BeTogether</footer>
 
+<script src="./js/script.js"></script>
 </body>
 </html>
