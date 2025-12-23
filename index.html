@@ -5,73 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeTogether – Labdarība</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>BeTogether</h1>
-    <nav>
-      <a href="index.html">Sākums</a>
-      <a href="mission.html">Misija</a>
-      <a href="par-mums.html">Par mums</a>
-      <a href="donate.html">Ziedot</a>
-    </nav>
-  </header>
+<header>
+  <h1>BeTogether</h1>
+  <nav>
+    <a href="index.html">Sākums</a>
+    <a href="mission.html">Misija</a>
+    <a href="par-mums.html">Par mums</a>
+    <a href="donate.html">Ziedot</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Kopā mēs varam palīdzēt</h2>
-      <p>
-        BeTogether ir labdarības organizācija, kas koncentrējas uz
-        līdzjūtību, vienotību un reālu palīdzību cilvēku dzīvēs.
-      </p>
-      <a href="donate.html" class="btn">Iesaistīties</a>
+<section class="hero">
+  <div class="hero-text">
+    <h2>Kopā mēs varam palīdzēt</h2>
+    <p>
+      BeTogether ir labdarības iniciatīva, kas palīdz cilvēkiem
+      grūtās dzīves situācijās.
+    </p>
+    <a href="donate.html" class="btn">Iesaistīties</a>
+  </div>
+
+  <div class="hero-card">
+    <h3>Kāpēc BeTogether?</h3>
+    <p>
+      Jo pat neliels atbalsts var mainīt kāda dzīvi.
+    </p>
+  </div>
+</section>
+
+<section class="cases">
+  <h2 class="section-title">Cilvēki, kuriem palīdzam</h2>
+
+  <div class="cards">
+    <div class="case-card" onclick="openPopup('anna')">
+      <img src="images/anna.jpg" alt="Anna">
+      <h3>Anna, 7</h3>
+      <p>Medicīniskā palīdzība</p>
     </div>
 
-    <div class="hero-card">
-      <h3>Kāpēc BeTogether?</h3>
-      <p>
-        Jo patiesas pārmaiņas notiek tad, kad cilvēki stāv kopā
-        un rūpējas viens par otru.
-      </p>
+    <div class="case-card" onclick="openPopup('mark')">
+      <img src="images/mark.jpg" alt="Marks">
+      <h3>Marks, 12</h3>
+      <p>Izglītības atbalsts</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="mission-preview">
-    <h2 class="section-title">Mūsu misija</h2>
+<footer>
+  <p>© 2025 BeTogether. Visas tiesības aizsargātas.</p>
+</footer>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Atbalsts</h3>
-        <p>Palīdzība kopienām ar ziedojumiem un brīvprātīgo darbu.</p>
-      </div>
+<!-- POPUP -->
+<div id="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+    <img id="popupImg">
+    <h2 id="popupTitle"></h2>
+    <p id="popupText"></p>
+    <a href="donate.html" class="btn">Ziedot</a>
+  </div>
+</div>
 
-      <div class="card">
-        <h3>Rūpes</h3>
-        <p>Resursu un palīdzības nodrošināšana tiem, kam tas visvairāk nepieciešams.</p>
-      </div>
-
-      <div class="card">
-        <h3>Cerība</h3>
-        <p>Labākas nākotnes veidošana ikvienam.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="donate-section">
-    <h2 class="section-title">Veic ieguldījumu</h2>
-    <p class="donate-text">Katrs ziedojums ir svarīgs.</p>
-    <a href="donate.html" class="btn">Ziedot tagad</a>
-  </section>
-
-  <footer>
-    <p>© 2025 BeTogether. Visas tiesības aizsargātas.</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
