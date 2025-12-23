@@ -37,17 +37,31 @@
   <h2>Cilvēki, kuriem palīdzam</h2>
 
   <div class="people-grid">
-    <div class="person-card" onclick="openModal('Anna', '7 gadi', 'Medicīniskā palīdzība', 'images/anna.jpg')">
-      <img src="images/anna.jpg">
+
+    <div class="person-card"
+      onclick="openModal(
+        'Anna',
+        '7 gadi',
+        'Annai nepieciešama medicīniskā palīdzība un regulāra ārstēšana.',
+        'images/anna.jpg'
+      )">
+      <img src="images/anna.jpg" alt="Anna">
       <h3>Anna, 7</h3>
       <p>Medicīniskā palīdzība</p>
     </div>
 
-    <div class="person-card" onclick="openModal('Marks', '12 gadi', 'Izglītības atbalsts', 'images/marks.jpg')">
-      <img src="images/marks.jpg">
+    <div class="person-card"
+      onclick="openModal(
+        'Marks',
+        '12 gadi',
+        'Markam nepieciešams izglītības atbalsts un mācību materiāli.',
+        'images/marks.jpg'
+      )">
+      <img src="images/marks.jpg" alt="Marks">
       <h3>Marks, 12</h3>
       <p>Izglītības atbalsts</p>
     </div>
+
   </div>
 </section>
 
@@ -55,14 +69,14 @@
   © 2025 BeTogether. Visas tiesības aizsargātas.
 </footer>
 
-<!-- MODAL -->
+<!-- POPUP -->
 <div id="modal" class="modal">
-  <div class="modal-content">
+  <div class="modal-box">
     <span class="close" onclick="closeModal()">×</span>
-    <img id="modal-img">
-    <h2 id="modal-name"></h2>
-    <p id="modal-age"></p>
-    <p id="modal-desc"></p>
+    <img id="modalImg">
+    <h2 id="modalName"></h2>
+    <p id="modalAge"></p>
+    <p id="modalDesc"></p>
   </div>
 </div>
 
