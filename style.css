@@ -10,9 +10,11 @@ body {
   color: #222;
 }
 
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 60px;
   background: white;
 }
@@ -25,7 +27,7 @@ body {
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: 500;
 }
 
@@ -35,6 +37,7 @@ nav a {
   border-radius: 20px;
 }
 
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -64,9 +67,10 @@ nav a {
   background: white;
   padding: 30px;
   border-radius: 20px;
-  max-width: 300px;
+  max-width: 320px;
 }
 
+/* PEOPLE */
 .people {
   padding: 80px 60px;
 }
@@ -81,7 +85,7 @@ nav a {
   background: white;
   padding: 20px;
   border-radius: 20px;
-  width: 220px;
+  width: 240px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
@@ -98,6 +102,7 @@ nav a {
   border-radius: 15px;
 }
 
+/* FOOTER */
 footer {
   background: #222;
   color: white;
@@ -113,17 +118,19 @@ footer {
   background: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
-.modal-content {
+.modal-box {
   background: white;
-  padding: 30px;
+  padding: 25px;
   border-radius: 20px;
   max-width: 400px;
   text-align: center;
+  position: relative;
 }
 
-.modal-content img {
+.modal-box img {
   width: 100%;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -131,8 +138,8 @@ footer {
 
 .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
   cursor: pointer;
 }
