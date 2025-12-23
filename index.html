@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeTogether – Labdarība</title>
+  <meta charset="UTF-8">
+  <title>BeTogether</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>BeTogether</h1>
+<header class="header">
+  <div class="logo">BeTogether</div>
   <nav>
     <a href="index.html">Sākums</a>
     <a href="mission.html">Misija</a>
     <a href="par-mums.html">Par mums</a>
-    <a href="donate.html">Ziedot</a>
+    <a href="donate.html" class="donate-btn">Ziedot</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-text">
-    <h2>Kopā mēs varam palīdzēt</h2>
-    <p>
-      BeTogether ir labdarības iniciatīva, kas palīdz cilvēkiem
-      grūtās dzīves situācijās.
-    </p>
-    <a href="donate.html" class="btn">Iesaistīties</a>
+    <h1>Kopā mēs varam palīdzēt</h1>
+    <p>Labdarības iniciatīva, kas palīdz cilvēkiem grūtās dzīves situācijās.</p>
+    <button class="primary-btn">Iesaistīties</button>
   </div>
 
-  <div class="hero-card">
+  <div class="hero-box">
     <h3>Kāpēc BeTogether?</h3>
-    <p>
-      Jo pat neliels atbalsts var mainīt kāda dzīvi.
-    </p>
+    <p>Jo pat neliels atbalsts var mainīt kāda dzīvi.</p>
   </div>
 </section>
 
-<section class="cases">
-  <h2 class="section-title">Cilvēki, kuriem palīdzam</h2>
+<section class="people">
+  <h2>Cilvēki, kuriem palīdzam</h2>
 
-  <div class="cards">
-    <div class="case-card" onclick="openPopup('anna')">
-      <img src="images/anna.jpg" alt="Anna">
+  <div class="people-grid">
+    <div class="person-card" onclick="openModal('Anna', '7 gadi', 'Medicīniskā palīdzība', 'images/anna.jpg')">
+      <img src="images/anna.jpg">
       <h3>Anna, 7</h3>
       <p>Medicīniskā palīdzība</p>
     </div>
 
-    <div class="case-card" onclick="openPopup('mark')">
-      <img src="images/mark.jpg" alt="Marks">
+    <div class="person-card" onclick="openModal('Marks', '12 gadi', 'Izglītības atbalsts', 'images/marks.jpg')">
+      <img src="images/marks.jpg">
       <h3>Marks, 12</h3>
       <p>Izglītības atbalsts</p>
     </div>
@@ -57,17 +52,17 @@
 </section>
 
 <footer>
-  <p>© 2025 BeTogether. Visas tiesības aizsargātas.</p>
+  © 2025 BeTogether. Visas tiesības aizsargātas.
 </footer>
 
-<!-- POPUP -->
-<div id="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">×</span>
-    <img id="popupImg">
-    <h2 id="popupTitle"></h2>
-    <p id="popupText"></p>
-    <a href="donate.html" class="btn">Ziedot</a>
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modal-img">
+    <h2 id="modal-name"></h2>
+    <p id="modal-age"></p>
+    <p id="modal-desc"></p>
   </div>
 </div>
 
